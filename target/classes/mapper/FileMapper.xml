@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yrxc.horse.mapper.FileMapper">
+
+    <select id="selectAll" resultType="com.yrxc.horse.entity.TFile">
+        select * from th_files ;
+    </select>
+    <select id="selectByName" parameterType="String" resultType="com.yrxc.horse.entity.TFile">
+        select * from th_files where uname=#{uname} order by id desc;
+    </select>
+    <select id="selectById" parameterType="Long" resultType="com.yrxc.horse.entity.TFile">
+        select * from th_files where id=#{id}
+    </select>
+    <insert id="insertFile" parameterType="com.yrxc.horse.entity.TFile" >
+        insert into th_files(id,uname,fpath,fname,ftype,file)
+        values(#{id},#{uname},#{fpath},#{fname},#{ftype},#{file})
+    </insert>
+    <update id ="updateFile" parameterType="com.yrxc.horse.entity.TFile">
+        update th_files set fpath=#{fpath} ,fname=#{fname},ftype=#{ftype},file=#{file} where id=#{id}
+    </update>
+
+</mapper>

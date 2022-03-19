@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv=“Content-Type” content=“multipart/form-data; charset=utf-8” />
+    <title>文件上传</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+    <input id="cert" type="file" />
+    <input type="button" value="上传文件" onclick="submit2()"/>
+
+</body>
+<script type="text/javascript">
+    function submit2()
+    {
+        var type='file';
+        var id='cert';
+        var formData = new FormData();
+        formData.append(type,$("#"+id)[0].files[0]);
+        $.ajax({
+            url:"/upload",
+            type:"post",
+            data:formData,
+            cache:false,
+            processData:false,
+            contentType:false,
+            success:function(data){
+                alert(data);
+            },
+            error:function(){
+                alert("error!");
+            }
+        });
+    }
+</script>
+</html>

@@ -1,0 +1,355 @@
+h2,ul,li,button,input,textarea,th,td,img {border: medium none;	margin: 0;	padding: 0;}
+a {	text-decoration: none;	color: #333;}
+a:hover {
+	text-decoration: none;
+	color: #F23E47;
+	}
+
+body{
+    background-color: black;
+}
+.frame{
+    width: 100%;
+    height:auto;
+    margin: auto;
+    max-width: 1680px;
+    min-width: 960px;
+}
+.mainbox{
+    float: left;
+    width: 70%;
+    max-width: 1440px;
+    min-width: 780px;
+}
+.mainbox .top{
+    width:98%;
+    height:160px;
+}
+.mainbox .top img{width:100% ;height:160px;}
+.mainbox .maincontent{
+    width:97%;
+    height:420px;
+    margin-top:5px;
+    border: 5px solid red;
+}
+.mainbox .maincontent .content{
+    float:left;
+    width: 70%;
+}
+.mainbox .maincontent .content table{
+    border-collapse:collapse;
+    border-spacing:0;
+    font-size: 32px;
+    color:blue;
+    cursor: pointer;
+    margin-top:20px;
+    margin-left:20px;
+    user-focus: none;
+    user-select: none;
+
+}
+
+.mainbox .maincontent .content table tbody{
+    padding: 20px 20px 10px 20px;
+
+}
+.mainbox .maincontent .content table tr td{
+    width:120px;
+    height:58px;
+    font-size: 36px;
+    border:3px solid blue;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    user-focus: none;
+    user-select: none;
+}
+.mainbox .maincontent .content .left{
+    width:50px;
+}
+
+.mainbox .maincontent .content .top{
+
+    border-top:none;
+    border-left:none;
+}
+.mainbox .maincontent .content table tr td span{
+    width:90px;
+    font-size:32px;
+    font-weight: bold;
+    color:yellow;
+    text-align: left;
+    margin-left: 10px;
+}
+.mainbox .maincontent .content table tr td .tzs {
+width:20px;
+font-size:16px;
+display:none;
+font-weight: bold;
+color:red;
+text-align: right;
+}
+.mainbox .odds{
+    width: 25%;
+    float:left;
+    user-focus: none;
+    user-select: none;
+    margin-left: 15px;
+    border-left: 4px solid red;
+}
+.mainbox .odds .odcontent{ height:420px;width:240px; color: #bb00ff;font-size: 36px;}
+.mainbox .odds .odcontent span{text-align: center;width: 200px;margin-left: 10px;}
+.mainbox .odds .odcontent ul{margin: 20px 60px 10px 20px;}
+.mainbox .odds .odcontent li{width:240px;text-align: left;color:yellow;margin:8px 2px 5px 2px;display: inline-block;}
+.mainbox .odds .odcontent li .obtm{margin-left:60px;}
+.mainbox .foot{
+    width:100%;
+    height:60px;
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+.mainbox .foot div{width:240px;float:left;font-size: 36px;font-weight: bold;margin-left:20px;}
+.mainbox .foot div span{width:110px;color: #bb00ff;display:inline-block;margin-left: 20px;text-align: right;}
+.mainbox .foot div a{width:40px;color:yellow;display: inline-block;margin-left:10px; color:indianred;}
+
+.mainbox .foot div .run{width:180px;border: 2px solid greenyellow; text-align: center; background-color:greenyellow;  }
+
+.frame .right {
+    width:15% ;
+    max-width: 240px;
+    height:auto;
+    margin:0px 10px 30px 10px;
+    float: left;
+    user-focus: none;
+    user-select: none;
+    cursor: pointer;
+}
+.right div{
+    margin: 10px 10px 10px 10px;
+}
+.right a {
+    font-weight: bold;
+    font-size: 24px;
+    color:#bb00ff;
+    text-align: center;
+    margin: 10px 30px 10px 10px;
+}
+.right span{
+    font-weight: bold;
+    font-size: 16px;
+    color:yellow;}
+.right textarea{
+    width:100%;
+    height:500px;
+    font-size:12px;
+    color:wheat;
+    border: none;
+    user-focus: none;
+    user-select: none;
+    background-color: transparent;
+}
+.pop-bg {
+    display: none;
+    background-color: #000;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.login-pop{
+    width: 290px;
+    display: none;
+    position:absolute;
+    left:50%;
+    height:auto;
+    z-index:100;
+    background-color:#fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    animation: bounceIn .3s;
+    user-select: none;
+    cursor:pointer;
+}
+ .login-title{
+    height: 60px;
+    background: #313541;
+    color: #fff;
+    line-height: 60px;
+}
+ .login-title h2 {
+ font-weight: normal;
+ font-size: 18px;
+ display: block;
+ float: left;
+ margin-left: 15px;
+ }
+.closeBtn {
+    float: right;
+    display: block;
+    width: 19px;
+    height: 18px;
+    background: url(../images/ico_tanchu_close.png) no-repeat;
+    margin: 21px 16px 0 0;
+    cursor: pointer;
+    transition:all .3s ease-in-out;
+}
+.column {
+ margin: 2px 2px 3px 10px;
+ line-height: 36px;
+ font-size: 16px;
+ font-weight: bold;
+ color: #626262;
+ }
+.column span{ display:inline-block;margin:10px 4px 10px 10px;}
+.column input[type=text]{width:150px;height:32px;border:1px solid grey;font-size:12px;}
+.column #scode{width:60px;height:32px;border:1px solid grey;}
+.column .sendsms{width:60px;margin-left: 4px;height:32px;background-color: #0CCEA2;border: 1px solid greenyellow;}
+.column .login-btn{margin-left: 100px;width: 100px;height:32px; background-color: #0CCEA2;}
+.run-pop{
+    width: 780px;
+    display: none;
+    position:absolute;
+    left:50%;
+    height:490px;
+    z-index:100;
+    background-color:#fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    animation: bounceIn .3s;
+    user-focus: none;
+    user-select: none;
+}
+.run-pop .content{width:100%;background-color: black;}
+.run-pop .content img{
+    width:100%;
+    height:480px;
+    margin: 10px 3px 10px 3px;
+}
+.run-pop .content img .mainpng{
+    display: inline-block;
+}
+
+.run-pop .showBtm{
+    width:200px;
+    position :absolute;
+    display: none;
+    top:65%;
+    left:60%;
+    height:50px;
+    z-index:200;
+    color:white;
+    font-size:48px;
+    font-family:Impact;
+    font-weight: bold;
+    animation: bounceIn .3s;
+    background-color: transparent;
+}
+.cz-pop{
+    width: 460px;
+    display: none;
+    position:absolute;
+    left:50%;
+    height:auto;
+    z-index:100;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    animation: bounceIn .3s;
+    user-focus: none;
+    user-select: none;
+}
+.cz-pop .content{float:left;width:45%;}
+
+.cz-pop .content .czcol{height:40px;width:200px;margin:30px 10px 10px 10px;}
+
+.cz-pop .content .czcol span{margin-right:10px; font-weight: bold;}
+
+.cz-pop .content .czcol select{height:30px;width:80px; text-align: left;font-weight: bold; border: none;}
+.cz-pop .czdz{float:left;width:55%;}
+.cz-pop .czdz .rcol{display: block;height:30px;margin: 10px 0 0 0;}
+.cz-pop .czdz a{display:inline-block;height:26px;width:90px;font-weight:bold;margin-left:20px;background-color: yellow;border: 1px solid bisque;}
+.cz-pop .czdz img{display: block;height:160px;width:80%; margin:5px 3px 8px 3px;}
+.cz-pop .content a{
+    display: block;
+    width:110px;
+    height:26px;
+    font-size:16px;
+    font-weight:bold;
+    background-color: yellow;
+    text-align: center;
+    margin: 3px 5px 5px 60px;
+    border: 1px solid blanchedalmond;
+}
+
+.tx-pop{
+    width: 480px;
+    display: none;
+    position:absolute;
+    left:50%;
+    height:auto;
+    z-index:100;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    font-size:12px;
+    animation: bounceIn .3s;
+    user-focus: none;
+    user-select: none;
+}
+.tx-pop .content{float:left;width:45%;}
+
+.tx-pop .content .czcol{display:block;height:40px;width:200px;margin:30px 10px 10px 10px;}
+
+.tx-pop .content .czcol span{display:inline-block;margin-right:10px; font-weight: bold;}
+
+.tx-pop .content .czcol .txsl{height:30px;width:40px; text-align: left; font-weight: bold; border: 1px solid grey;}
+.tx-pop .txdz{float:left;width:55%;}
+.tx-pop .txdz .rcol{display: block;height:30px;margin: 10px 0 0 0;}
+.tx-pop .txdz a {
+display:inline-block;
+height:26px;
+width:90px;
+font-weight:bold;
+font-size:16px;
+margin-left:20px;
+background-color: yellow;
+border: 1px solid blanchedalmond;
+text-align:center;
+}
+.tx-pop .txdz img{display: block;height:160px;width:80%; margin:5px 3px 8px 3px;}
+.tx-pop .txdz input[type=file]{display:inline-block;height:26px;width:200px;font-weight:bold;margin-left:20px;}
+.tx-pop .txdz input[type=button]{display:inline-block;height:26px;width:90px;font-weight:bold;margin-left:20px;background-color: greenyellow;border:1px solid black;margin-bottom:20px;margin-top:5px;}
+.tx-pop .content a{
+    display: block;
+    width:110px;
+    height:26px;
+    font-weight:bold;
+    font-size:16px;
+    background-color: yellow;
+    text-align: center;
+    margin: 3px 5px 5px 60px;
+    border: 1px solid blanchedalmond;
+}
+.msg-pop{
+    width: 240px;
+    display: none;
+    position:absolute;
+    left:50%;
+    height:auto;
+    z-index:300;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    animation: bounceIn .3s;
+    user-focus: none;
+    user-select: none;
+}
+
+.msg-pop .mscol{display:block;width:90%;height:60px;margin:20px 10px 10px 10px;}
+.msg-pop .mscol .showMsg{
+    margin: 3px 2px 2px 3px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color:red;
+}
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yrxc.horse.mapper.CoinsTXMapper">
+
+    <select id="selectAll" resultType="com.yrxc.horse.entity.CoinsTX">
+        select * from th_tx ;
+    </select>
+    <select id="selectByName" parameterType="String" resultType="com.yrxc.horse.entity.CoinsTX">
+        select * from th_tx where uname=#{uname} ;
+    </select>
+
+    <select id="selectById" parameterType="Long" resultType="com.yrxc.horse.entity.CoinsTX">
+            select * from th_tx where id =#{id};
+    </select>
+    <delete id="deleteCoinsTX" parameterType="Long" >
+        delete from th_tx where id =#{id};
+    </delete>
+    <insert id="insertCoinsTX" parameterType="com.yrxc.horse.entity.CoinsTX" >
+        insert into th_tx(id,uname,tdate,tsl,ip,ttype)
+        values(#{id},#{uname},#{tdate},#{tsl},#{ip},#{ttype})
+    </insert>
+</mapper>
